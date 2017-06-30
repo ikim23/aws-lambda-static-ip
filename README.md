@@ -10,6 +10,10 @@ This repository is created according to article [AWS Lambdas with a static outgo
 
 ## Usage:
 
+Clone repository:
+```
+git clone https://github.com/ikim23/aws-lambda-static-ip.git
+```
 Create `.env` file:
 ```
 mv .env.template .env
@@ -23,10 +27,6 @@ Set environment variable values in `.env` file:
 |STAGE|name of deployment stage (e.g dev)|
 |REGION|deployment region (e.g us-west-1)|
 
-Clone repository:
-```
-git clone https://github.com/ikim23/aws-lambda-static-ip.git
-```
 Install NPM modules:
 ```
 docker-compose run install
