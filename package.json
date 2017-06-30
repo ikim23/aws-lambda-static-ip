@@ -1,0 +1,21 @@
+{
+  "name": "aws-lambda-static-ip",
+  "version": "1.0.0",
+  "description": "AWS Lambda - Static IP",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js functions/"
+  },
+  "keywords": [],
+  "author": "ikim23",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}

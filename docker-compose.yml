@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+
+  shell:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aws-lambda-static-ip
+    volumes:
+     - .:/usr/src/app
+    env_file: .env
+    command: bash
+
+  install:
+    extends:
+      service: shell
+    command: npm i --silent
+
+  deploy:
+    extends:
+      service: shell
+    command: sls deploy
