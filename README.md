@@ -15,6 +15,7 @@ Create `.env` file:
 mv .env.template .env
 ```
 Set environment variable values in `.env` file:
+
 |Variable|Description|
 |-|-|
 |AWS_ACCESS_KEY_ID|Access key ID for serverless framework|
